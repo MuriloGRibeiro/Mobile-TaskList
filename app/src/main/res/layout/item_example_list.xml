@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/text_content_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/touch_target_delete_icon" app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tv_item_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/exemplo_titulo_tarefa" android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tv_item_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/exemplo_descricao_tarefa" android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tv_item_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/prefixo_categoria" android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tv_item_data_finalizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/prefixo_prazo" android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/touch_target_status_icon"
+            android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/touch_target_delete_icon">
+
+            <ImageView
+                android:id="@+id/iv_status_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center" android:src="@drawable/ic_alert"
+                app:tint="@color/md_theme_warning"
+                android:contentDescription="@string/content_description_status_tarefa" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/touch_target_delete_icon"
+            android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_delete_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center" android:src="@drawable/ic_delete"
+                app:tint="@android:color/black" android:contentDescription="@string/content_description_excluir_tarefa" android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

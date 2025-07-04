@@ -8,6 +8,6 @@
         android:id="@+id/cadastroFragment" android:icon="@drawable/ic_add" android:title="Cadastro" />
 
     <item
-        android:id="@+id/buscaFragment" android:icon="@drawable/ic_search" android:title="Busca" />
+        android:id="@+id/buscaFragment" android:icon="@drawable/ic_search" android:title="Buscar" />
 
 </menu>

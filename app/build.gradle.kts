@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.todolist"
-        minSdk = 31 // Mantido em 31, como você configurou
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -47,9 +47,11 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     // RecyclerView
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+    // CardView
+    implementation("androidx.cardview:cardview:1.0.0") // Adicione esta linha
 
-    // Navigation Component (para gerenciar a navegação entre Fragments)
-    val navVersion = "2.7.7" // MUDADO: de nav_version para navVersion
+    // Navigation Component
+    val navVersion = "2.7.7"
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
 
