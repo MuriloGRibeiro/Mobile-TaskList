@@ -1,17 +1,3 @@
 <resources>
-    <string name="app_name">ToDoList</string>
-
-    <string name="confirmar_exclusao">Confirmar Exclusão</string>
-    <string name="mensagem_exclusao_tarefa">Tem certeza que deseja excluir a tarefa \'%s\'?</string>
-    <string name="sim">Sim</string>
-    <string name="nao">Não</string>
-    <string name="tarefa_excluida_sucesso">Tarefa \'%s\' excluída.</string>
-    <string name="clicou_na_tarefa">Clicou na tarefa: \'%s\'</string>
-
-    <string name="content_description_status_tarefa">Status da Tarefa</string>
-    <string name="content_description_excluir_tarefa">Excluir Tarefa</string>
-    <string name="prefixo_categoria">Categoria: %s</string> <string name="prefixo_prazo">Prazo: %s</string> <string name="exemplo_titulo_tarefa">Título da Tarefa Exemplo</string>
-    <string name="exemplo_descricao_tarefa">Descrição detalhada da tarefa. Pode ser um pouco longa.</string>
-    <string name="prefixo_categoria_sumario_nome">Categoria: %s</string>
-    <string name="prefixo_categoria_sumario_total">Total de Tarefas: %d</string>
+    <string name="app_name">ToDoListApp</string>
 </resources>
