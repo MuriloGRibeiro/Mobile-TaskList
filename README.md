@@ -1,1 +1,1 @@
-Gerenciador de Tarefas - Dispositivos Móveis
+Lista de Tarefas - Dispositivos Móveis
